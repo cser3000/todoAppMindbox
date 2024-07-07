@@ -1,0 +1,32 @@
+
+.header {
+    width: 100vw;
+    height: 100px;
+    border-bottom: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerText {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.createTodo {
+    margin-left: 30%;
+    border-radius: 10px;
+    border: solid 1px #2969FF;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.createTodo:hover {
+    color: white;
+    background-color: #2969FF;
+}

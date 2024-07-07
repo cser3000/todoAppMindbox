@@ -1,0 +1,49 @@
+
+.createTodoBlock {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 40vw;
+    height: min-content;
+    padding: 50px;
+}
+
+.createTodoTitle {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.createTodoForm {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.createTodoFormText {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.createTodoFormInput {
+    border: none;
+    height: 50px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.createTodoFormSubmit {
+    width: 200px;
+    height: 50px;
+    border: 1px solid lightgreen;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.createTodoFormSubmit:hover {
+    background-color: lightgreen;
+}
