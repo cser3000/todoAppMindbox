@@ -3,10 +3,9 @@ import {FC, useState} from "react";
 import * as styles from "./Header.module.css"
 import Modal from "../../../../UI/Modal/Modal";
 import {CreateTodo} from "./components";
-import {Todo} from "../../types/types";
 
 type Props = {
-    addTodo: (todo: Todo) => void
+    addTodo: (title: string, description: string) => void
 }
 
 const Header: FC<Props> = (props) => {
@@ -21,14 +20,13 @@ const Header: FC<Props> = (props) => {
     return (
         <>
             <header className={styles.header}>
-                <h1 className={styles.headerText}>Приложения списка задач</h1>
-                <button className={styles.createTodo} onClick={onClick}>создать задачу</button>
+                <h1 className={styles.headerText}>Приложения списка дел</h1>
+                <button className={styles.createTodo} onClick={onClick}>создать дело</button>
             </header>
             <Modal open={open} closeModal={close}>
-                <CreateTodo addTodo={addTodo} />
+                <CreateTodo addTodo={addTodo} close={close}/>
             </Modal>
         </>
-
     )
 }
 

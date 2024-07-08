@@ -1,0 +1,6 @@
+
+.todoLists {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}

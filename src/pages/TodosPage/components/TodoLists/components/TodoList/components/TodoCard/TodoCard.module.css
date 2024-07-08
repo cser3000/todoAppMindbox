@@ -1,0 +1,28 @@
+
+.card {
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.titleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.descriptionBlock {
+    padding: 20px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+}
