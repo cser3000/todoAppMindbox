@@ -1,7 +1,6 @@
 import {ChangeEvent, FC, useState} from "react";
 
 import * as styles from "./CreateTodo.module.css";
-import {Todo} from "../../../../types/types";
 
 type Props = {
     addTodo: (title: string, description: string) => void

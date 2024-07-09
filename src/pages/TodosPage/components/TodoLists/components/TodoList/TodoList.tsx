@@ -17,7 +17,7 @@ const TodoList: FC<Props> = (props) => {
         <div>
             <h2 className={styles.todoListTitle}>{todoListTitle}</h2>
             <div className={styles.todoList}>
-                {todos.map((item) => <TodoCard todo={item} changeStatus={changeStatus}/>)}
+                {todos.map((item) => <TodoCard key={item.id} todo={item} changeStatus={changeStatus}/>)}
             </div>
         </div>
 
